@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurant</title>
+	<link rel="stylesheet" href="css/Style.css">
+
+</head>
+
+<body>
+	<div class="conteiner" >
+
+		<header id="app2">
+
+			<div class="entrance">
+				<h1 class="name">RESTAURANT</h1>
+				<div class="header_menu ">	
+					<ul class="menu_list">
+						<li class="menu_item"><a v-on:click='show_modal_1=!false' class="menu_link" href="#">Sign Up</a></li>
+						<li class="line"> | </li>
+						<li class="menu_item"><a v-on:click='show_modal_2=!false' class="menu_link" href="#">Login</a></li>
+					</ul>
+				</div>	
+			</div>
+						
+
+			<div class="main_menu">
+				<nav id="menu">	
+					<ul>
+						<li><a href="#about_us" class="menu_link">About Us</a></li>
+						<li><a href="#grilled" class="menu_link">Featured Dish</a></li>
+						<li><a href="#our_services" class="menu_link">Our Services</a></li>
+						<li><a href="#gallery" class="menu_link">Our Gallery</a></li>
+						<li><a href="#contact_us" class="menu_link">Contacts Us</a></li>
+					</ul>
+				</nav>
+			</div>
+
+
+			<div v-if="show_modal_2" class=" back_background" > 
+				<div class="modal_window">
+					<div class="window_title"> 
+						<h2>Your Account</h2> 
+						<a v-on:click='show_modal_2=false' href="#" class="button-close ">×</a> 
+					</div> 
+					
+					<div class="window_contents"> 
+						<form method="POST" action="postform">
+							<input type="text" name="user" placeholder="User name" size="20" maxlength ='15'/><br> 
+							<input type="password" name="pass" placeholder="Password" size="20" maxlength ='8' />
+						</form>
+					</div> 
+
+					<div class="window_footer">    
+						<button href="#" class="window_button">Login</button>
+					</div> 
+				</div>
+			</div> 
+			
+
+			<div v-if="show_modal_1" class=" back_background"> 
+				<div class="modal_window">
+					<div class="window_title"> 
+						<h2>Registration</h2> 
+						<a v-on:click='show_modal_1=false' href="#" class="button-close">×</a> 
+					</div> 
+
+					
+					
+					<div class="window_contents"> 
+						<form method="POST" action="postform">
+							<input type="text" name="user" placeholder="First name" size="20" maxlength ='15'/><br> 
+							<input type="text" name="user" placeholder="Last name" size="20" maxlength ='15'/><br>
+							<input type="text" name="user" placeholder="User name" size="20" maxlength ='15'/><br> 
+							<input type="password" name="pass" placeholder="Password" size="20" maxlength ='8'/><br>
+							<input type="password" name="pass" placeholder="Repeat password" size="20" maxlength ='8'/><br>
+						</form>
+					</div> 
+
+					<div class="window_footer">    
+						<button href="#" class="window_button">Create account</button>
+					</div> 
+				</div>
+			</div>  
+
+		</header>
+
+		<main>
+
+			
+			<div class="visit">
+				<img src="Images/Chiken.png" alt="Chiken">
+				<p id="app1">{{ paragraph }}</p>
+				<a href="#contact_us">VISIT NOW!</a>
+			</div>
+			
+
+			<div id="about_us">
+				<img class="f_left img_about_us" src="Images/About_us.png" alt="About us">
+				<div class="about_us" >
+					<h2>About us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam omnis debitis, mollitia corporis illo dolore doloribus eius dolorum, laudantium, quod minus porro repellendus. ipsum dolor sit amet, consectetur.</p>
+				</div>
+			</div>
+
+			<div class="classic_block">
+				<img class="f_right" src="Images/phone1.png" alt="Smartphone">
+				<div class="find_way">
+					<h2>Find the easiest way!</h2>
+					<p>Download our mobile app for Android or iOS device and order foods from anywhere you are!</p>
+					<button class="download_button">Download</button>
+				</div>	
+			</div>
+
+			<div id="grilled" class="text_with_trait">
+				<h2>Featured Dish</h2>	
+				<img src="Images/trait.png" alt="________">			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, saepe. ipsum dolor sit amet.?</p>
+			</div>
+			
+			<div class="grilled">
+				<img class="f_left" src="Images/service.png" alt="service">
+				<div class="grilled_chicken">
+					<h2>Grilled Chicken</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam omnis debitis, mollitia corporis illo dolor</p>
+					<h2 class="price">$2.99</h2>
+					<button class="chicken_button">ORDER</button>
+				</div>
+			</div>
+
+			<div class="rewiews">
+				<img src="Images/face.png" alt="table">
+				<article><b>Johny Doe,</b> Newyork, NY</article>
+				<p>Lorem Lorem1000 ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem magnam id ad nobis quasi veniam illo eligendi dolore, praesentium beatae. </p>
+			</div>
+			
+			<div id="our_services" class="text_with_trait">
+				<h2 id="app">Our Services</h2>	
+				<img src="Images/trait.png" alt="________">			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, saepe. ipsum dolor sit amet.?</p>
+			</div>
+			
+			
+
+			<div  class="our_services">
+
+				<div class="services_1-3">
+					<img class="f_left" src="Images/wedding.png" alt="">
+					<div class="text">
+						<h2>Wedding Programm</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in ex et voluptate doloremque.</p>
+					</div>
+				</div>
+				
+				<div class="service_2">					
+					<img class="f_right" src="Images/birthday.png" alt="">
+					<div class="text">
+						<h2>Birthday Party</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in ex et voluptate doloremque.</p>
+					</div>
+				</div>
+
+				<div class="services_1-3">
+					<img class="f_left" src="Images/business.png" alt="">
+					<div class="text">
+						<h2>Business Meeting</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in ex et voluptate doloremque.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="gallery" class="text_with_trait new">
+				<h2>Our Gallery</h2>	
+				<img src="Images/trait.png" alt="________">			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, saepe. ipsum dolor sit amet.?</p>
+			</div>
+			
+			
+			<div id="photo_gallery">
+				<images_gallery>
+				</images_gallery>
+			</div>
+			
+
+			
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae6ffe74a06414783a5841a8d1b2e2a85e7aff84b0ee93a5ebdc12d675531d063&amp;source=constructor" ></iframe>
+			
+			<div id="contact_us" class="text_with_trait new">
+				<h2>Contacts US</h2>	
+				<img src="Images/trait.png" alt="________">			
+				<p>13th West Street, NYC, USA <br/>Phone: +1 334 556</p>
+			</div>
+
+		</main>
+
+		<footer>
+			<div class="right">
+				<p class="gray">Copyright 2016 @ All right reserved </p>
+				<p>| Unsubscribe</p>
+			</div>
+			<div class="we_in_social">
+				<p class="gray">Follow Us</p>
+				<ul class="socials">
+					<li><a href="#">f</a></li>
+					<li><a href="#">t</a></li>
+					<li><a href="#">g+</a></li>
+					<li><a href="#">In</a></li>
+				</ul>
+
+			</div>
+		</footer>
+		
+	</div>
+	  
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="vue.js"></script>
+
+<!---->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>	
+
+

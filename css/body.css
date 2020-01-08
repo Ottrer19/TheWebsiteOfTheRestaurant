@@ -1,0 +1,217 @@
+
+.visit{
+	/*cursor: pointer;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	background: linear-gradient(to top,  rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/ForVisitBlock.png);
+	background-size: cover;
+	height: 420px;
+	padding: 10px 50px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.visit>p{
+	margin-top:35px;
+	margin-bottom: 55px; 
+}
+
+
+.visit>a{
+	font-size: 15px;
+	background: #fff;
+	padding: 8px 40px;
+	color: none;
+	border: none;
+	border-radius: 55px;
+	transition: 0.2s;
+}
+
+.visit>a:hover{
+
+}
+
+/* ------------------Простые блоки----------------- */
+.f_left{
+	float: left;
+}
+
+.f_right{
+	float: right;
+}
+
+.about_us{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #EAEEF7;
+	padding: 0 30px; 
+	height: 300px;
+}
+
+.img_about_us{
+	height: 300px;
+	width: 50%;
+}
+
+.about_us>h2{
+	margin-bottom: 30px;
+	color: #DE645D;
+}
+
+.crutch{
+	height: 100px;
+	width: 380px
+}
+
+.find_way{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-flow: column wrap;
+	padding: 0 30px; 
+	height: 250px;
+	width: 100%;
+}
+
+.find_way>h2{
+	margin-bottom: 30px;
+	color: #DE645D;
+}
+
+.find_way>button{
+	font-family: latobold;
+	font-size: 17px;
+	font-weight: 800;
+	background: none;
+	margin-top: 40px;
+	width: 180px; 
+	height: 45px;
+	color: none;
+	border-color: #000;
+	border-width: 3px; 
+	transition: 0.5s ease;
+}
+
+.find_way>button:hover{
+	background-color: #C8CCD5;
+}
+
+.classic_block {
+	display: flex;
+	justify-content: flex-;
+	align-items: flex-end;
+	flex-direction: row-reverse;
+	background: linear-gradient(to top, #EAEEF7 72%, #fff 72%);
+	padding-right: 50px
+}
+
+/*-----------------------ТЕКСТ С ПАЛКОЙ-----------------------*/
+
+.text_with_trait{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 0 120px;
+	font-size: 12.5;
+}
+
+main>.text_with_trait{
+	margin-bottom: 35px;
+}
+
+.text_with_trait>img{
+	width: 100px;
+	margin: 18px 0;
+}
+
+.text_with_trait>h2{
+	font-family: latoregular;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.grilled{
+	margin: 0 20px;
+	margin-bottom: 70px;
+}
+
+.grilled>img{
+	width: 270px;
+	height: auto;
+}
+
+.grilled_chicken{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #DC4F45;
+	color: #fff;
+	padding-left: 30px;
+	padding-right: auto; 
+	height: 270px	;
+}
+
+.grilled_chicken>h2{
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.grilled_chicken>p{
+	margin-top: 10px;
+	font-size: 14px;
+	padding-right: 30px;
+}
+
+.grilled_chicken>button{
+	background: none;
+	font-family: latoregular;
+	font-weight: 400;
+	font-size: 21px;
+	width: 180px; 
+	height: 40px;
+	color: #fff;
+	border-color: #fff;
+	border: 2px solid;
+	transition: 0.5s ease;
+}
+
+.grilled_chicken>button:hover{
+	background-color:#F77369;
+
+}
+
+.price{
+	margin: 20px 0; 
+}
+	
+.rewiews{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient(to top,  rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/background_for_reviews.png);
+	background-size: cover;
+	height: 260px;
+	padding: 10px 50px;
+}
+
+.rewiews>article{
+	margin-top:25px;
+	margin-bottom: 28px; 
+}
+
+
+/*---------------MAP---------------*/
+
+iframe{
+	width: 800;
+	height: 270;
+	border-style: none;
+}

@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+h2{
+	font-family: latolight;
+	font-weight: 600;
+	cursor: default;
+}
+
+p{
+	cursor: default;
+	font-size: 16px;
+}
+
+h1{
+	cursor: default;
+}
+
+body{
+	top: 50px;
+	font-family: latolight, Arial, sans-serif;
+	font-style: 16px;
+	color: #000;
+	overflow-wrap: break-word;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+	background-color: #E4E4E4;
+}
+
+@media only screen and (max-device-width: 700px){
+	body{
+		max-width: 100%;
+	}
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+.conteiner{
+	max-width: 100%;
+	min-width: 320px;
+	background-color: #fff;
+}
+
+main>div{
+	margin-bottom: 65px;
+}
+
+
+button{
+	cursor: pointer;
+}
